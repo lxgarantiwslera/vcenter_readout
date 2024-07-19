@@ -1,0 +1,19 @@
+---
+- name: Example playbook using custom module
+  hosts: localhost
+  tasks:
+    - name: Set vcenters variable
+      set_fact:
+        vcenters_name: "{{ vcenters }}"
+    - name: Debug vcenters variable
+      debug:
+        var: vcenters_name
+
+    - name: Get information from DS
+      vcenter_ds_info:
+        vcenters_name: "{{ vcenters_name }}"
+      register: result
+
+    - name: Print the list
+      debug:
+        var: result

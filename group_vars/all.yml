@@ -1,0 +1,8 @@
+vcenters:
+  - vcenter_host: host1
+    vcenter_user: user1@user1
+    vcenter_password: password
+
+  - vcenter_host: host2
+    vcenter_user: user2@user2
+    vcenter_password: password2
