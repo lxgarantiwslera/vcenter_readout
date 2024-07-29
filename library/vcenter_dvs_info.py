@@ -52,7 +52,7 @@ class GetInfo():
             update_data_template = {
                 "Datacenter": dc_name,
                 "vcenter_name": vcenter_host,
-                "Distributed Virtual Switch:":dvs_name,
+                "Distributed Virtual Switch": dvs_name,
                 "Portgroup": pg_name,
                 "VLAN": vlan
             }
@@ -61,7 +61,7 @@ class GetInfo():
             update_data_template = {
                 "Datacenter": dc_name,
                 "vcenter_name": vcenter_host,
-                "Distributed Virtual Switch:":dvs_name,
+                "Distributed Virtual Switch": dvs_name,
                 "Portgroup": pg_name,
                 "VLAN Trunk Range": vlan
             }

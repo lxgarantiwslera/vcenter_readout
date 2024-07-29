@@ -53,9 +53,9 @@ class GetInfo():
         update_data_template = {
             "Datastore": summary.name,
             "vcenter_name": vcenter_host,
-            "Capacity:":(f"{summary.capacity / 1024 / 1024 / 1024} GB"),
-            "Free Space:": (f"{summary.freeSpace / 1024 / 1024 / 1024} GB"),
-            "Type:": summary.type
+            "Capacity": (f"{summary.capacity / 1024 / 1024 / 1024} GB"),
+            "Free Space": (f"{summary.freeSpace / 1024 / 1024 / 1024} GB"),
+            "Type": summary.type
         }
         self.datastore_list.append(update_data_template)
 
